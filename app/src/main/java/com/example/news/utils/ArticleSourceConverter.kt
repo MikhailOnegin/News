@@ -1,11 +1,11 @@
 package com.example.news.utils
 
 import androidx.room.TypeConverter
-import com.example.news.pojo.topHeadlines.ArticleSource
+import com.example.news.domain.pojo.ArticleSource
 
 class ArticleSourceConverter {
 
-                                                              // Нужно переписать нормально
+                                                              // need to finish
 
     @TypeConverter
     fun fromSource(source: ArticleSource):String{
@@ -13,7 +13,7 @@ class ArticleSourceConverter {
 
     }
     @TypeConverter
-    fun toSource(source:String):ArticleSource{
-        return ArticleSource("1","1")
+    fun toSource(source:String): ArticleSource {
+        return ArticleSource("1", "1")
     }
 }

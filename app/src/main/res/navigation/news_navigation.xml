@@ -6,9 +6,9 @@
 
     <fragment
         android:id="@+id/all_channels"
-        android:name="com.example.news.fragments.ChannelsFragment"
+        android:name="com.example.news.presentation.fragments.NewsChannelsFragment"
         android:label="Channels"
-        tools:layout="@layout/channels_fragment">
+        tools:layout="@layout/news_channels_fragment">
         <action
             android:id="@+id/action_channels_to_favorite_channels"
             app:destination="@+id/favorite_channels"
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/favorite_channels"
-        android:name="com.example.news.fragments.FavoritesChannelsFragment"
+        android:name="com.example.news.presentation.fragments.FavoritesChannelsFragment"
         android:label="Favorite channels"
         tools:layout="@layout/favorite_channels_fragment">
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/search_channels"
-        android:name="com.example.news.fragments.SearchChannelsFragment"
+        android:name="com.example.news.presentation.fragments.SearchChannelsFragment"
         android:label="Search channels"
         tools:layout="@layout/search_channels_fragment">
         <action
@@ -52,7 +52,7 @@
 
     <fragment
         android:id="@+id/news_from_favorite_channels"
-        android:name="com.example.news.fragments.ArticlesFragment"
+        android:name="com.example.news.presentation.fragments.ArticlesFragment"
         android:label="News"
         tools:layout="@layout/news_from_favorite_channels">
         <action
