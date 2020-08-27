@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="All"
+        android:id="@+id/all_channels"
+        android:icon="@drawable/ic_launcher_menu_all_channels_foreground"/>
+
+    <item android:title="Favorite"
+        android:id="@+id/favorite_channels"
+        android:icon="@drawable/ic_launcher_menu_favorite_white_foreground"/>
+
+    <item android:title="Search"
+        android:id="@+id/search_channels"
+        android:icon="@drawable/ic_launcher_menu_foreground"/>
+</menu>

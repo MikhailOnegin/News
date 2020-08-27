@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="text_view_channel_item_title_logo">Title</string>
+    <string name="text_view_channel_item_description_logo">Description</string>
+</resources>

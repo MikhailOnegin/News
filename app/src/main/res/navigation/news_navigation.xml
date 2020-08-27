@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/all_channels">
+
+    <fragment
+        android:id="@+id/all_channels"
+        android:name="com.example.news.fragments.ChannelsFragment"
+        android:label="Channels"
+        tools:layout="@layout/channels_fragment">
+        <action
+            android:id="@+id/action_channels_to_favorite_channels"
+            app:destination="@+id/favorite_channels"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favorite_channels"
+        android:name="com.example.news.fragments.FavoritesChannelsFragment"
+        android:label="Favorite channels"
+        tools:layout="@layout/favorite_channels_fragment">
+        <action
+            android:id="@+id/action_favorite_channels_to_all_channels"
+            app:destination="@+id/all_channels"
+            />
+        <action
+            android:id="@+id/action_favorite_channels_to_search_channels"
+            app:destination="@+id/search_channels"/>
+
+        <action
+            android:id="@+id/action_favorite_channels_to_news_from_favorite_channels"
+            app:destination="@+id/news_from_favorite_channels"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/search_channels"
+        android:name="com.example.news.fragments.SearchChannelsFragment"
+        android:label="Search channels"
+        tools:layout="@layout/search_channels_fragment">
+        <action
+            android:id="@+id/action_search_channels_to_channels"
+            app:destination="@+id/all_channels"
+            />
+        <action
+            android:id="@+id/action_search_channels_to_favorite_channels"
+            app:destination="@+id/favorite_channels"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/news_from_favorite_channels"
+        android:name="com.example.news.fragments.ArticlesFragment"
+        android:label="News"
+        tools:layout="@layout/news_from_favorite_channels">
+        <action
+            android:id="@+id/action_news_from_favorite_channels_to_all_channels"
+            app:destination="@+id/all_channels"
+            />
+        <action
+            android:id="@+id/action_news_from_favorite_channels_to_favorite_channel"
+            app:destination="@+id/favorite_channels"
+            />
+        <action
+            android:id="@+id/action_news_from_favorite_channels_to_search_channels"
+            app:destination="@id/search_channels"
+            />
+
+    </fragment>
+</navigation>
